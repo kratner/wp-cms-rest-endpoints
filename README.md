@@ -2,6 +2,11 @@
 
 Provides custom REST endpoints for CMS
 
-**/wp-json/wpcms/v1/links**
+Returns posts by category name.
 
-Returns posts from "links" category
+Use query parameter **name**, i.e.:
+
+**/wp-json/wpcms/v1/posts-by-category/?name=links**
+
+*Returns posts from "links" category*
+

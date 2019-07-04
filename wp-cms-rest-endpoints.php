@@ -9,10 +9,11 @@
  */
 
 function wpcmsapi_links($request) {
+    $category_name = $request['name'];
     $args = Array(
         'post_type' => 'post',
         'posts_per_page' => '15',
-        'category_name' => 'links',
+        'category_name' => $category_name,
         'orderby' => 'date',
         'order' => 'DESC'
       );
@@ -32,7 +33,7 @@ function wpcmsapi_links($request) {
 }
 add_action( 'rest_api_init', function () {
         $trunk = 'wpcms/v1';
-        register_rest_route( $trunk, '/links/', array(
+        register_rest_route( $trunk, '/posts-by-category/', array(
                 'methods' => 'GET',
                 'callback' => 'wpcmsapi_links'
             )
