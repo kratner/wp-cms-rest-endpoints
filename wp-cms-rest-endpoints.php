@@ -31,8 +31,11 @@ function wpcmsapi_links($request) {
     return $array;
 }
 add_action( 'rest_api_init', function () {
-    register_rest_route( 'wpcms/v1', '/links/', array(
-            'methods' => 'GET',
-            'callback' => 'wpcmsapi_links'
-    ) );
-} );
+        $trunk = 'wpcms/v1';
+        register_rest_route( $trunk, '/links/', array(
+                'methods' => 'GET',
+                'callback' => 'wpcmsapi_links'
+            )
+        );
+    } 
+);
