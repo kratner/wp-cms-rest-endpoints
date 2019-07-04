@@ -2,9 +2,7 @@
 
 ## Provides custom REST endpoints
 
-Returns posts by category name.
-
-Use query parameter **name**, i.e.:
+To return posts by category name, pass query parameter **name**, i.e.:
 
 **/wp-json/wpcms/v1/posts-by-category/?name=links**
 
