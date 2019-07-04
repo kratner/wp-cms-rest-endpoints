@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WordPress CMS Custom REST API Endpoints
- * Plugin URI: https://github.com/kratner/wp-post-featured-on-wpengine-blog
+ * Plugin URI: https://github.com/kratner/wp-cms-rest-endpoints
  * Description: Provides custom REST endpoints for CMS
  * Version: 1.0
  * Author: Keith Ratner
