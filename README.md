@@ -1,6 +1,6 @@
 # wp-cms-rest-endpoints
 
-## Provides custom REST endpoints
+## Provides custom REST API endpoints
 
 To return posts by category name, pass query parameter **name**, i.e.:
 
